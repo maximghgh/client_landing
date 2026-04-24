@@ -357,16 +357,17 @@ p {
 }
 
 .project-card header {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: start;
-  gap: 0.7rem;
+  display: block;
 }
 
 .project-card h3 {
   font-size: clamp(1.45rem, 2.1vw, 2rem);
   color: var(--text-strong);
   min-width: 0;
+}
+
+.project-card .project-platform {
+  display: none;
 }
 
 .project-platform {
