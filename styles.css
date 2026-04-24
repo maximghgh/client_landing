@@ -652,7 +652,7 @@ p {
   color: var(--accent);
 }
 
-modal-meta p {
+.modal-meta p {
   font-size: 0.86rem;
   color: #575d56;
 }
