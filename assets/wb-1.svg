@@ -1,0 +1,17 @@
+<svg width="1200" height="840" viewBox="0 0 1200 840" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WB card slide 1">
+  <rect width="1200" height="840" rx="36" fill="#FAFAFA"/>
+  <rect x="64" y="64" width="1072" height="712" rx="28" fill="#FFFFFF" stroke="#D0D2CF"/>
+  <rect x="108" y="104" width="300" height="44" rx="12" fill="#D0D2CF"/>
+  <rect x="108" y="174" width="460" height="300" rx="24" fill="#F4F4F3" stroke="#D0D2CF"/>
+  <rect x="608" y="174" width="480" height="300" rx="24" fill="#F8F6F2" stroke="#D0D2CF"/>
+  <rect x="140" y="214" width="180" height="220" rx="20" fill="#FFFFFF" stroke="#D0D2CF"/>
+  <rect x="348" y="214" width="180" height="220" rx="20" fill="#FFFFFF" stroke="#D0D2CF"/>
+  <circle cx="698" cy="250" r="16" fill="#86612F"/>
+  <rect x="730" y="236" width="300" height="28" rx="10" fill="#D0D2CF"/>
+  <rect x="730" y="278" width="250" height="22" rx="8" fill="#D0D2CF"/>
+  <rect x="730" y="314" width="210" height="22" rx="8" fill="#D0D2CF"/>
+  <rect x="730" y="350" width="280" height="22" rx="8" fill="#D0D2CF"/>
+  <rect x="108" y="508" width="980" height="228" rx="24" fill="#F7F5F2" stroke="#D0D2CF"/>
+  <path d="M160 670 C230 600, 320 720, 400 650 C470 590, 560 710, 640 640 C710 580, 820 690, 900 620 C955 574, 1010 610, 1044 584" fill="none" stroke="#86612F" stroke-width="12" stroke-linecap="round"/>
+  <text x="164" y="586" fill="#52311B" font-size="34" font-family="Arial" font-weight="700">CTR +37%</text>
+</svg>

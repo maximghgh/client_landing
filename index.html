@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Дрямина Маргарита — создание карточек товаров для WB и Ozon: инфографика, обложки, продающие слайды."
+    />
+    <title>Дрямина Маргарита | Карточки WB/Ozon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="page-home">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="На главную">DM</a>
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="./" data-nav="home">Главная</a>
+        <a href="#projects" data-nav="projects">Кейсы</a>
+        <a href="./about.html" data-nav="about">Обо мне</a>
+      </nav>
+      <button class="admin-open" type="button" id="admin-open">Мини-админка</button>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">WB / OZON DESIGN</p>
+          <h1>Дрямина Маргарита</h1>
+          <h2>Создание карточек товаров для маркетплейсов</h2>
+          <p class="hero-description">
+            Делаю карточки, которые выделяют товар в выдаче, улучшают CTR и помогают растить
+            конверсию. От обложки до полной серии слайдов с инфографикой.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Смотреть кейсы</a>
+            <a class="btn btn-ghost" href="./about.html">Услуги и процесс</a>
+          </div>
+          <ul class="hero-stats">
+            <li>
+              <span>200+</span>
+              <p>карточек оформлено</p>
+            </li>
+            <li>
+              <span>WB/Ozon</span>
+              <p>опыт в обеих платформах</p>
+            </li>
+            <li>
+              <span>3-5 дней</span>
+              <p>срок подготовки комплекта</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-media reveal">
+          <div class="hero-photo-wrap">
+            <img src="./assets/banner.png" alt="Дрямина Маргарита" />
+          </div>
+          <div class="hero-note">
+            <strong>Фокус: продающая визуализация товара</strong>
+            <span>Обложка • инфографика • серия слайдов • адаптация под платформу</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section">
+        <div class="section-head reveal">
+          <p class="eyebrow">Cases</p>
+          <h2>Примеры карточек товаров</h2>
+          <p>
+            Каждая карточка в формате квадрата. По нажатию открывается подробная модалка: слева
+            изображения, справа описание и параметры работы.
+          </p>
+        </div>
+
+        <div class="projects-grid" id="projects-grid"></div>
+      </section>
+
+      <section class="section cta reveal">
+        <p class="eyebrow">Контакты</p>
+        <h2>Нужны карточки товаров под запуск или масштабирование?</h2>
+        <p>Соберу визуал под категорию товара, целевую аудиторию и требования маркетплейса.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:hello@example.com">hello@example.com</a>
+          <a class="btn btn-ghost" href="./about.html">Подробнее об услугах</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Дрямина Маргарита. Карточки товаров WB/Ozon.</p>
+    </footer>
+
+    <div class="modal" id="project-modal" aria-hidden="true">
+      <div class="modal-overlay" data-modal-close></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" data-modal-close aria-label="Закрыть">✕</button>
+
+        <div class="modal-layout">
+          <div class="modal-media">
+            <div class="modal-thumbs" id="modal-thumbs"></div>
+            <div class="modal-main-image-wrap">
+              <img id="modal-main-image" src="" alt="Изображение проекта" />
+            </div>
+          </div>
+
+          <div class="modal-info">
+            <p class="modal-tag" id="modal-tag"></p>
+            <h3 id="modal-title"></h3>
+            <p class="modal-description" id="modal-description"></p>
+            <div class="modal-meta" id="modal-meta"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="admin-drawer" id="admin-drawer" aria-hidden="true">
+      <div class="admin-overlay" data-admin-close></div>
+      <aside class="admin-panel" role="dialog" aria-modal="true" aria-labelledby="admin-title">
+        <button class="admin-close" type="button" data-admin-close aria-label="Закрыть">✕</button>
+        <h3 id="admin-title">Мини-админка проектов</h3>
+        <p class="admin-hint">Данные сохраняются локально в браузере (`localStorage`).</p>
+
+        <div class="admin-row">
+          <label for="admin-project-select">Проект</label>
+          <select id="admin-project-select"></select>
+        </div>
+
+        <div class="admin-actions-top">
+          <button type="button" class="btn btn-ghost" id="admin-add-project">Новый проект</button>
+          <button type="button" class="btn btn-ghost" id="admin-delete-project">Удалить проект</button>
+        </div>
+
+        <div class="admin-grid">
+          <label>Название <input id="admin-title-input" type="text" /></label>
+          <label>Платформа <input id="admin-platform-input" type="text" placeholder="WB / OZON" /></label>
+          <label>Короткий подзаголовок <input id="admin-short-input" type="text" /></label>
+          <label>Тип инфографики
+            <select id="admin-chart-input">
+              <option value="ring">Ring</option>
+              <option value="bars">Bars</option>
+              <option value="donut">Donut</option>
+              <option value="line">Line</option>
+              <option value="grid">Grid</option>
+              <option value="wave">Wave</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="admin-block">Описание
+          <textarea id="admin-description-input" rows="4"></textarea>
+        </label>
+
+        <div class="admin-grid metric-edit">
+          <label>Метрика 1 (название) <input id="admin-metric1-label" type="text" /></label>
+          <label>Метрика 1 (значение) <input id="admin-metric1-value" type="text" /></label>
+          <label>Метрика 2 (название) <input id="admin-metric2-label" type="text" /></label>
+          <label>Метрика 2 (значение) <input id="admin-metric2-value" type="text" /></label>
+        </div>
+
+        <label class="admin-block">Параметры (каждая строка: Заголовок|Значение)
+          <textarea id="admin-meta-input" rows="4"></textarea>
+        </label>
+
+        <div class="admin-images-controls">
+          <label>Добавить картинку по URL
+            <div class="admin-inline">
+              <input id="admin-image-url" type="url" placeholder="https://..." />
+              <button type="button" class="btn btn-ghost" id="admin-add-url">Добавить</button>
+            </div>
+          </label>
+
+          <label>Загрузить изображения
+            <input id="admin-image-files" type="file" accept="image/*" multiple />
+          </label>
+        </div>
+
+        <div class="admin-images-list" id="admin-images-list"></div>
+
+        <div class="admin-footer-actions">
+          <button type="button" class="btn btn-primary" id="admin-save">Сохранить</button>
+          <button type="button" class="btn btn-ghost" id="admin-reset">Сбросить к дефолту</button>
+        </div>
+      </aside>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

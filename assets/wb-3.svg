@@ -1,0 +1,20 @@
+<svg width="1200" height="840" viewBox="0 0 1200 840" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ozon card slide 1">
+  <rect width="1200" height="840" rx="36" fill="#FAFAFA"/>
+  <rect x="70" y="70" width="1060" height="700" rx="30" fill="#FFFFFF" stroke="#D0D2CF"/>
+  <rect x="114" y="114" width="972" height="120" rx="22" fill="#F4F4F3" stroke="#D0D2CF"/>
+  <rect x="146" y="150" width="240" height="48" rx="12" fill="#86612F"/>
+  <rect x="414" y="150" width="280" height="48" rx="12" fill="#FFFFFF" stroke="#D0D2CF"/>
+  <rect x="722" y="150" width="332" height="48" rx="12" fill="#FFFFFF" stroke="#D0D2CF"/>
+  <rect x="114" y="266" width="602" height="460" rx="24" fill="#F8F6F2" stroke="#D0D2CF"/>
+  <rect x="740" y="266" width="346" height="220" rx="24" fill="#F8F6F2" stroke="#D0D2CF"/>
+  <rect x="740" y="506" width="346" height="220" rx="24" fill="#F8F6F2" stroke="#D0D2CF"/>
+  <text x="156" y="340" fill="#52311B" font-size="56" font-family="Arial" font-weight="700">A+ Content</text>
+  <rect x="156" y="374" width="430" height="24" rx="9" fill="#D0D2CF"/>
+  <rect x="156" y="414" width="360" height="24" rx="9" fill="#D0D2CF"/>
+  <path d="M156 650 C260 560, 350 710, 460 620 C520 570, 580 620, 660 560" fill="none" stroke="#86612F" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="854" cy="372" r="74" fill="#FFFFFF" stroke="#D0D2CF" stroke-width="16"/>
+  <text x="824" y="388" fill="#52311B" font-size="30" font-family="Arial" font-weight="700">4.9</text>
+  <rect x="786" y="566" width="256" height="26" rx="10" fill="#D0D2CF"/>
+  <rect x="786" y="606" width="220" height="26" rx="10" fill="#86612F"/>
+  <rect x="786" y="646" width="170" height="26" rx="10" fill="#D0D2CF"/>
+</svg>
