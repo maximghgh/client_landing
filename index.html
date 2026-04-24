@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260425-014942" />
+    <link rel="stylesheet" href="./styles.css?v=20260425-015943" />
   </head>
   <body class="page-home">
     <header class="site-header">
@@ -28,7 +28,6 @@
         <a href="#projects" data-nav="projects">Кейсы</a>
         <a href="./about.html" data-nav="about">Обо мне</a>
       </nav>
-      <button class="admin-open" type="button" id="admin-open">Мини-админка</button>
     </header>
 
     <main>
@@ -123,76 +122,6 @@
       </div>
     </div>
 
-    <div class="admin-drawer" id="admin-drawer" aria-hidden="true">
-      <div class="admin-overlay" data-admin-close></div>
-      <aside class="admin-panel" role="dialog" aria-modal="true" aria-labelledby="admin-title">
-        <button class="admin-close" type="button" data-admin-close aria-label="Закрыть">✕</button>
-        <h3 id="admin-title">Мини-админка проектов</h3>
-        <p class="admin-hint">Данные сохраняются локально в браузере (`localStorage`).</p>
-
-        <div class="admin-row">
-          <label for="admin-project-select">Проект</label>
-          <select id="admin-project-select"></select>
-        </div>
-
-        <div class="admin-actions-top">
-          <button type="button" class="btn btn-ghost" id="admin-add-project">Новый проект</button>
-          <button type="button" class="btn btn-ghost" id="admin-delete-project">Удалить проект</button>
-        </div>
-
-        <div class="admin-grid">
-          <label>Название <input id="admin-title-input" type="text" /></label>
-          <label>Платформа <input id="admin-platform-input" type="text" placeholder="WB / OZON" /></label>
-          <label>Короткий подзаголовок <input id="admin-short-input" type="text" /></label>
-          <label>Тип инфографики
-            <select id="admin-chart-input">
-              <option value="ring">Ring</option>
-              <option value="bars">Bars</option>
-              <option value="donut">Donut</option>
-              <option value="line">Line</option>
-              <option value="grid">Grid</option>
-              <option value="wave">Wave</option>
-            </select>
-          </label>
-        </div>
-
-        <label class="admin-block">Описание
-          <textarea id="admin-description-input" rows="4"></textarea>
-        </label>
-
-        <div class="admin-grid metric-edit">
-          <label>Метрика 1 (название) <input id="admin-metric1-label" type="text" /></label>
-          <label>Метрика 1 (значение) <input id="admin-metric1-value" type="text" /></label>
-          <label>Метрика 2 (название) <input id="admin-metric2-label" type="text" /></label>
-          <label>Метрика 2 (значение) <input id="admin-metric2-value" type="text" /></label>
-        </div>
-
-        <label class="admin-block">Параметры (каждая строка: Заголовок|Значение)
-          <textarea id="admin-meta-input" rows="4"></textarea>
-        </label>
-
-        <div class="admin-images-controls">
-          <label>Добавить картинку по URL
-            <div class="admin-inline">
-              <input id="admin-image-url" type="url" placeholder="https://..." />
-              <button type="button" class="btn btn-ghost" id="admin-add-url">Добавить</button>
-            </div>
-          </label>
-
-          <label>Загрузить изображения
-            <input id="admin-image-files" type="file" accept="image/*" multiple />
-          </label>
-        </div>
-
-        <div class="admin-images-list" id="admin-images-list"></div>
-
-        <div class="admin-footer-actions">
-          <button type="button" class="btn btn-primary" id="admin-save">Сохранить</button>
-          <button type="button" class="btn btn-ghost" id="admin-reset">Сбросить к дефолту</button>
-        </div>
-      </aside>
-    </div>
-
-    <script src="./script.js"></script>
+    <script src="./script.js?v=20260425-015943"></script>
   </body>
 </html>
