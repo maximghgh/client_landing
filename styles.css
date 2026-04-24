@@ -108,15 +108,19 @@ p {
 }
 
 .brand {
-  width: 44px;
-  height: 44px;
+  min-height: 44px;
+  padding: 0 0.9rem;
   border-radius: 12px;
   background: linear-gradient(160deg, #f4eee6, #e9ddcf);
   border: 1px solid #d8c4ab;
-  display: grid;
-  place-items: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Sora", sans-serif;
   font-weight: 700;
+  font-size: 0.76rem;
+  line-height: 1;
+  white-space: nowrap;
   color: var(--accent-dark);
 }
 
@@ -889,6 +893,11 @@ p {
 
   .section {
     padding: 3.25rem 0;
+  }
+
+  .brand {
+    padding: 0 0.72rem;
+    font-size: 0.67rem;
   }
 }
 
