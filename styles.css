@@ -356,16 +356,14 @@ p {
 }
 
 .project-card header {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: start;
-  gap: 0.6rem;
+  position: relative;
+  min-height: 4.6rem;
+  padding-right: 4.25rem;
 }
 
 .project-card h3 {
   font-size: clamp(1.45rem, 2.1vw, 2rem);
   color: var(--text-strong);
-  min-width: 0;
 }
 
 .project-platform {
@@ -374,6 +372,11 @@ p {
   color: var(--accent);
   font-weight: 700;
   line-height: 1;
+  min-width: 2.5ch;
+  position: absolute;
+  top: 0.1rem;
+  right: 0;
+  text-align: right;
   white-space: nowrap;
 }
 
